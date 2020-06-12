@@ -48,13 +48,13 @@ variable "public_ssh_key" {
 }
 
 
-##############################################################
-# Create public key in Devices>Manage>SSH Keys in SL console
-##############################################################
-resource "ibm_compute_ssh_key" "cam_public_key" {
-  label      = "CAM Public Key"
-  public_key = "${var.public_ssh_key}"
-}
+// ##############################################################
+// # Create public key in Devices>Manage>SSH Keys in SL console
+// ##############################################################
+// resource "ibm_compute_ssh_key" "cam_public_key" {
+//   label      = "CAM Public Key"
+//   public_key = "${var.public_ssh_key}"
+// }
 
 ##############################################################
 # Create temp public key for ssh connection
