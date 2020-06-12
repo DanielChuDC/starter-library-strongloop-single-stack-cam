@@ -24,3 +24,9 @@ variable "bastion_host_key" {
 variable "bastion_password" {
   type = "string"
 }
+
+// add for ssh key generation
+
+variable "private_ssh_key"{
+  default     = "./random-repo"
+}
