@@ -169,17 +169,6 @@
       "regex": "^(?!(.*(--)))([A-Za-z0-9]{1,2}|[A-Za-z0-9][A-Za-z0-9-]{1,198}[A-Za-z0-9])$"
     },
     {
-      "description": "Public SSH key used to connect to the virtual guest; Allow the openSSH format key with optional comment (with optional email)",
-      "hidden": false,
-      "immutable": false,
-      "label": "Public SSH Key",
-      "name": "public_ssh_key",
-      "required": false,
-      "secured": false,
-      "type": "string",
-      "regex": "^ssh-rsa AAAA[0-9A-Za-z+/]+[=]{0,3}( [^@]+@[^@]+| [^@]+){0,1}$"
-    },
-    {
       "name": "bastion_host",
       "type": "string",
       "group_name": "bastion",
@@ -256,6 +245,16 @@
       "hidden": false,
       "shortname": "",
       "type": "url"
+    },
+    {
+      "name": "ssh_key",
+      "label": "Please access the strongloop-single-stack instance using the following ssh key",
+      "description": "",
+      "group_name": "",
+      "secured": false,
+      "hidden": true,
+      "shortname": "",
+      "type": "string"
     }
   ]
 }
