@@ -43,9 +43,6 @@ variable "hostname" {
   description = "Hostname of the virtual instance to be deployed"
 }
 
-variable "public_ssh_key" {
-  description = "Public SSH key used to connect to the virtual guest"
-}
 
 
 // ##############################################################
